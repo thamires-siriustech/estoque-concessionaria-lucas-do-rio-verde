@@ -1,0 +1,58 @@
+# Capital parado no pátio: análise de gestão de estoque de uma concessionária
+
+Análise de dados que mede quanto do capital de uma concessionária está imobilizado em estoque, qual parcela está parada há tempo demais e que tipo de veículo trava esse dinheiro — a partir de um relatório de estoque real, anonimizado.
+
+> **Pergunta de negócio:** Quanto do capital da loja está imobilizado em estoque, qual parcela está parada há tempo demais, e que tipo de veículo trava esse dinheiro?
+
+---
+
+## Principais resultados
+
+- **R$ 8,3 milhões imobilizados em estoque** (nos 123 veículos com preço anunciado), sendo mais de 90% concentrados nos carros — as motos, apesar de metade das unidades, pesam pouco no capital.
+- **38% do capital — cerca de R$ 3,2 milhões — está parado há mais de 180 dias.** É caixa travado que poderia estar girando.
+- **Os ex-locados são o principal vilão do encalhe:** veículos que voltaram da locação ficam parados em média quase um ano, muito acima do estoque normal.
+- **Repasse não é o problema:** ao contrário do senso comum, carros de repasse giram praticamente no mesmo ritmo que o estoque normal.
+- Recomendação: uma política específica de precificação e giro para ex-locados ataca diretamente a maior fonte de capital imobilizado, liberando caixa sem precisar vender uma unidade a mais do que o normal.
+
+## Metodologia
+
+1. **Extração** — o relatório de estoque veio em PDF; os dados foram extraídos de forma programática (pdfplumber) para um CSV estruturado.
+2. **Anonimização e limpeza** — nomes das lojas substituídos por "Loja 1/2/3"; identificadores sensíveis (placa e RENAVAM) removidos por completo; marcação de veículos "ex-locado" e "repasse" como atributos de análise.
+3. **Análise** — distribuição do capital por tipo (carro × moto) e faixa de preço; capital por tempo em estoque (aging); ranking de encalhe e comparação por origem (normal / repasse / ex-locado); curva de preço por ano-modelo; mix de marcas.
+
+## Stack técnico
+
+- **Python** — pandas, numpy
+- **Extração de PDF** — pdfplumber
+- **Visualização** — matplotlib
+- **Ambiente** — Jupyter Notebook
+
+## Como executar
+
+```bash
+git clone https://github.com/thamires-siriustech/estoque-concessionaria-lucas-do-rio-verde.git
+cd estoque-concessionaria-lucas-do-rio-verde
+pip install -r requirements.txt
+jupyter notebook analise_estoque_concessionaria.ipynb
+```
+
+Mantenha o notebook e o CSV na mesma pasta. No Jupyter, use **Kernel → Restart & Run All**.
+
+## Estrutura do repositório
+
+```
+estoque-concessionaria-lucas-do-rio-verde/
+├── analise_estoque_concessionaria.ipynb   # análise completa
+├── estoque_lucas.csv                       # dataset anonimizado (184 veículos)
+├── requirements.txt
+└── README.md
+```
+
+## Sobre os dados e privacidade
+
+Os dados são reais, de um relatório de estoque de 03/08/2026, mas foram **anonimizados**: nomes de loja substituídos por Loja 1/2/3 e identificadores sensíveis (placa e RENAVAM) removidos. Não há dado de custo, margem ou cliente — apenas o preço de venda anunciado, que é informação pública. 61 veículos (quase todos motos novas) estão sem preço ("Consulte") e ficam de fora das análises de valor. Não há quilometragem, então a depreciação é analisada por ano-modelo.
+
+---
+
+**Autora:** Thamires Martins da Silva
+Projeto de portfólio em análise de dados — parte 1 de 2 (estoque; a parte 2 trata de equipe de vendas e comissionamento).
