@@ -19,15 +19,15 @@ CHEVROLET;S10 LTZ;carro;2.8;12/12;2012;LARANJA;74990.0;;AUTOMÁTICO;False;True;7
 CHEVROLET;S10 LTZ FD4;carro;2.5;15/16;2016;PRATA;114990.0;FL;MANUAL;False;False;90;Loja 1;Sem marcador LOCADO/LOCADORA na fonte
 CHEVROLET;C4;carro;2.0;10/11;2011;BRANCO;16990.0;FL;MANUAL;False;False;125;Loja 1;Sem marcador LOCADO/LOCADORA na fonte
 FIAT;ARGO DRIVE;carro;1.3;25/26;2026;PRATA;107990.0;FL;AUTOMÁTICO;False;False;385;Loja 1;Sem marcador LOCADO/LOCADORA na fonte
-FIAT;ARGO DRIVE;carro;1.3;25/26;2026;PRATA;112990.0;FL;AUTOMÁTICO;True;False;319;Loja 2;Marcado LOCADO na fonte; não equivale automaticamente a ex-locado; classificacao operacional a confirmar
+FIAT;ARGO DRIVE;carro;1.3;25/26;2026;PRATA;112990.0;FL;AUTOMÁTICO;True;False;319;Loja 2;Marcado LOCADO na fonte - não equivale automaticamente a ex-locado
 FIAT;ARGO DRIVE;carro;1.3;25/26;2026;BRANCO;112990.0;FL;AUTOMÁTICO;False;False;349;Loja 1;Sem marcador LOCADO/LOCADORA na fonte
-FIAT;ARGO DRIVE COM KIT;carro;1.0;24/25;2025;PRATA;89990.0;FL;MANUAL;True;False;592;Loja 1;Marcado LOCADO na fonte; não equivale automaticamente a ex-locado; classificacao operacional a confirmar
-FIAT;ARGO TREKKING;carro;1.3;25/26;2026;CINZA;114990.0;FL;AUTOMÁTICO;True;False;116;Loja 1;Marcado LOCADO na fonte; não equivale automaticamente a ex-locado; classificacao operacional a confirmar
-FIAT;CRONOS DRIVE;carro;1.3;25/26;2026;CINZA;119990.0;FL;AUTOMÁTICO;True;False;116;Loja 1;Marcado LOCADO na fonte; não equivale automaticamente a ex-locado; classificacao operacional a confirmar
-FIAT;CRONOS DRIVE;carro;1.3;24/25;2025;PRATA;109990.0;FL;AUTOMÁTICO;True;False;535;Loja 1;Marcado LOCADO na fonte; não equivale automaticamente a ex-locado; classificacao operacional a confirmar
-FIAT;CRONOS DRIVE;carro;1.3;25/25;2025;BRANCO;104990.0;FL;AUTOMÁTICO;True;False;509;Loja 1;Marcado LOCADO na fonte; não equivale automaticamente a ex-locado; classificacao operacional a confirmar
-FIAT;CRONOS DRIVE;carro;1.3;25/26;2026;BRANCO;119990.0;FL;AUTOMÁTICO;True;False;116;Loja 1;Marcado LOCADO na fonte; não equivale automaticamente a ex-locado; classificacao operacional a confirmar
-FIAT;CRONOS PRECISION CH-R;carro;1.3;25/26;2026;CINZA;124990.0;AL;AUTOMÁTICO;True;False;116;Loja 1;Marcado LOCADO na fonte; não equivale automaticamente a ex-locado; classificacao operacional a confirmar
+FIAT;ARGO DRIVE COM KIT;carro;1.0;24/25;2025;PRATA;89990.0;FL;MANUAL;True;False;592;Loja 1;Marcado LOCADO na fonte - não equivale automaticamente a ex-locado
+FIAT;ARGO TREKKING;carro;1.3;25/26;2026;CINZA;114990.0;FL;AUTOMÁTICO;True;False;116;Loja 1;Marcado LOCADO na fonte - não equivale automaticamente a ex-locado
+FIAT;CRONOS DRIVE;carro;1.3;25/26;2026;CINZA;119990.0;FL;AUTOMÁTICO;True;False;116;Loja 1;Marcado LOCADO na fonte - não equivale automaticamente a ex-locado
+FIAT;CRONOS DRIVE;carro;1.3;24/25;2025;PRATA;109990.0;FL;AUTOMÁTICO;True;False;535;Loja 1;Marcado LOCADO na fonte - não equivale automaticamente a ex-locado
+FIAT;CRONOS DRIVE;carro;1.3;25/25;2025;BRANCO;104990.0;FL;AUTOMÁTICO;True;False;509;Loja 1;Marcado LOCADO na fonte - não equivale automaticamente a ex-locado
+FIAT;CRONOS DRIVE;carro;1.3;25/26;2026;BRANCO;119990.0;FL;AUTOMÁTICO;True;False;116;Loja 1;Marcado LOCADO na fonte - não equivale automaticamente a ex-locado
+FIAT;CRONOS PRECISION CH-R;carro;1.3;25/26;2026;CINZA;124990.0;AL;AUTOMÁTICO;True;False;116;Loja 1;Marcado LOCADO na fonte - não equivale automaticamente a ex-locado
 FIAT;MOBI LIKE;carro;1.0;18/19;2019;PRETA;44990.0;FL;MANUAL;False;False;52;Loja 2;Sem marcador LOCADO/LOCADORA na fonte
 FIAT;MOBI TREKKING 1.0MT;carro;1.0;23/24;2024;VERMELHO;63990.0;FL;MANUAL;False;False;280;Loja 1;Sem marcador LOCADO/LOCADORA na fonte
 FIAT;PALIO FIRE ECONOMY;carro;1.0;09/10;2010;PRATA;19990.0;FL;MANUAL;False;False;46;Loja 2;Sem marcador LOCADO/LOCADORA na fonte
@@ -37,16 +37,16 @@ FIAT;STRADA ADV CD;carro;1.8;18/19;2019;BRANCO;61990.0;FL;MANUAL;False;True;121;
 FIAT;STRADA ADVENT FLEX;carro;;10/11;2011;PRATA;41990.0;FL;MANUAL;False;True;79;Loja 2;Sem marcador LOCADO/LOCADORA na fonte
 FIAT;STRADA FIRE FLEX;carro;1.0;09/10;2010;BRANCO;29990.0;FL;MANUAL;False;True;322;Loja 1;Sem marcador LOCADO/LOCADORA na fonte
 FIAT;STRADA FREEDOM CD;carro;1.3;22/23;2023;BRANCO;101990.0;FL;MANUAL;False;False;481;Loja 1;Sem marcador LOCADO/LOCADORA na fonte
-FIAT;STRADA FREEDOM CD;carro;1.0;24/25;2025;PRATA;111990.0;FL;MANUAL;True;False;604;Loja 1;Marcado LOCADO na fonte; não equivale automaticamente a ex-locado; classificacao operacional a confirmar
-FIAT;STRADA FREEDOM CD;carro;1.3;25/25;2025;CINZA;129990.0;FL;;True;False;349;Loja 1;Marcado LOCADO na fonte; não equivale automaticamente a ex-locado; classificacao operacional a confirmar
-FIAT;STRADA FREEDOM CD;carro;1.3;25/25;2025;BRANCO;122990.0;FL;MANUAL;True;False;406;Loja 1;Marcado LOCADO na fonte; não equivale automaticamente a ex-locado; classificacao operacional a confirmar
-FIAT;STRADA FREEDOM CD13;carro;;26/27;2027;BRANCO;134990.0;FL;MANUAL;True;False;55;Loja 1;Marcado LOCADO na fonte; não equivale automaticamente a ex-locado; classificacao operacional a confirmar
-FIAT;STRADA FREEDOM CS;carro;1.3;25/26;2026;CINZA;119990.0;FL;MANUAL;True;False;116;Loja 1;Marcado LOCADO na fonte; não equivale automaticamente a ex-locado; classificacao operacional a confirmar
-FIAT;STRADA FREEDOM CS;carro;1.3;25/25;2025;BRANCO;124990.0;FL;MANUAL;True;False;437;Loja 1;Marcado LOCADO na fonte; não equivale automaticamente a ex-locado; classificacao operacional a confirmar
+FIAT;STRADA FREEDOM CD;carro;1.0;24/25;2025;PRATA;111990.0;FL;MANUAL;True;False;604;Loja 1;Marcado LOCADO na fonte - não equivale automaticamente a ex-locado
+FIAT;STRADA FREEDOM CD;carro;1.3;25/25;2025;CINZA;129990.0;FL;;True;False;349;Loja 1;Marcado LOCADO na fonte - não equivale automaticamente a ex-locado
+FIAT;STRADA FREEDOM CD;carro;1.3;25/25;2025;BRANCO;122990.0;FL;MANUAL;True;False;406;Loja 1;Marcado LOCADO na fonte - não equivale automaticamente a ex-locado
+FIAT;STRADA FREEDOM CD13;carro;;26/27;2027;BRANCO;134990.0;FL;MANUAL;True;False;55;Loja 1;Marcado LOCADO na fonte - não equivale automaticamente a ex-locado
+FIAT;STRADA FREEDOM CS;carro;1.3;25/26;2026;CINZA;119990.0;FL;MANUAL;True;False;116;Loja 1;Marcado LOCADO na fonte - não equivale automaticamente a ex-locado
+FIAT;STRADA FREEDOM CS;carro;1.3;25/25;2025;BRANCO;124990.0;FL;MANUAL;True;False;437;Loja 1;Marcado LOCADO na fonte - não equivale automaticamente a ex-locado
 FIAT;STRADA FREEDOM CS (INDISPONÍVEL);carro;1.3;23/24;2024;PRETA;96990.0;FL;MANUAL;False;False;371;Loja 1;Sem marcador LOCADO/LOCADORA na fonte
 FIAT;STRADA RANCH ZERO KM;carro;1.0;26/26;2026;CINZA;154990.0;FL;AUTOMÁTICO;False;False;121;Loja 1;Sem marcador LOCADO/LOCADORA na fonte
 FIAT;STRADA VOLCANO C/KIT;carro;1.3;26/26;2026;CINZA;146990.0;FL;AUTOMÁTICO;False;False;121;Loja 1;Sem marcador LOCADO/LOCADORA na fonte
-FIAT;TORO ENDUR T270 AT6;carro;1.3;23/24;2024;BRANCO;124990.0;FL;AUTOMÁTICO;True;False;550;Loja 2;Marcado LOCADO na fonte; não equivale automaticamente a ex-locado; classificacao operacional a confirmar
+FIAT;TORO ENDUR T270 AT6;carro;1.3;23/24;2024;BRANCO;124990.0;FL;AUTOMÁTICO;True;False;550;Loja 2;Marcado LOCADO na fonte - não equivale automaticamente a ex-locado
 FIAT;TORO FREEDOM;carro;1.3;25/25;2025;PRATA;169990.0;FL;AUTOMÁTICO;False;False;466;Loja 1;Sem marcador LOCADO/LOCADORA na fonte
 FIAT;TORO FREEDOM;carro;1.3;24/25;2025;BRANCO;132990.0;FL;AUTOMÁTICO;False;False;283;Loja 1;Sem marcador LOCADO/LOCADORA na fonte
 FIAT;TORO FREEDOM AT;carro;1.8;17/17;2017;BRANCO;;FL;AUTOMÁTICO;False;False;27;Loja 1;Sem marcador LOCADO/LOCADORA na fonte
