@@ -55,7 +55,8 @@ A comparação privada dos dois relatórios identificou 120 registros correspond
 - Preço anunciado não equivale a custo, preço efetivo de venda, caixa ou lucro.
 - A cobertura de preços é diferente entre os relatórios.
 - Registros parecidos podem representar unidades distintas; não foram removidos automaticamente.
-- A marcação `LOCADO` na fonte não equivale automaticamente a ex-locado; o pareamento dos três ex-locados foi deixado pendente para não inventar classificação.\n- Os arquivos públicos são anonimizados. O relatório operacional original não faz parte do repositório.
+- A marcação `LOCADO` na fonte não equivale automaticamente a ex-locado; o pareamento dos três ex-locados foi deixado pendente para não inventar classificação.
+- Os arquivos públicos são anonimizados. O relatório operacional original não faz parte do repositório.
 
 ## Arquivos
 
