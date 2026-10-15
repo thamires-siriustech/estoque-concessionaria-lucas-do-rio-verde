@@ -45,6 +45,8 @@ A operação informou que há **3 carros ex-locados no estoque de revenda**; os 
 
 O CSV atualizado omite códigos internos, placas, RENAVAM e datas exatas de entrada. As correspondências entre relatórios foram feitas privadamente e são descritas apenas em nível agregado no notebook; nenhum identificador por unidade é publicado.
 
+**Atenção à locação:** o PDF de outubro inclui registros marcados LOCADO/LOCADORA. A validação operacional informa que há 3 carros ex-locados na revenda e que os demais marcados LOCADO seguem em locação. Como esses três ainda não foram associados às linhas anonimizadas corretas, os indicadores gerais de idade nesta versão descrevem os registros do relatório — não devem ser interpretados como uma contagem perfeitamente delimitada de veículos disponíveis para venda.
+
 
 ## Resultados da fotografia de agosto (03/08/2026)
 
@@ -103,9 +105,13 @@ Mantenha `analise_estoque_concessionaria.ipynb` e `estoque_lucas.csv` na mesma p
 ```
 estoque-concessionaria-lucas-do-rio-verde/
 ├── assets/
-│   └── resumo-estoque.svg                       # resumo atualizado do estoque e repasses
-├── analise_estoque_concessionaria.ipynb
-├── estoque_lucas.csv
+│   └── resumo-estoque.svg
+├── analise_estoque_concessionaria.ipynb   # análise da fotografia de agosto
+├── comparativo_estoque.ipynb               # comparação temporal e repasse
+├── comparativo_estoque.md                  # relatório comparativo
+├── estoque_lucas.csv                       # base anonimizada de agosto
+├── estoque_2026-10-15_anonimizado.csv       # base anonimizada de outubro
+├── historico_indicadores_estoque.csv       # indicadores agregados
 ├── requirements.txt
 └── README.md
 ```
