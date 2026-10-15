@@ -133,7 +133,11 @@ estoque-concessionaria-lucas-do-rio-verde/
 | `locado` | Marcador `LOCADO` presente no relatório original; não confirma que o veículo já saiu da locação |
 | `repasse` | Indicador de veículo classificado como repasse |
 | `dias` | Dias em estoque na data de referência |
-| `loja` | Loja anonimizada (Loja 1, Loja 2 ou Loja 3) |\n| `situacao_locacao` | Nota sobre os marcadores `LOCADO`/`LOCADORA`; não substitui confirmação operacional |
+| `loja` | Loja anonimizada (Loja 1, Loja 2 ou Loja 3) |
+| `situacao_locacao` | Nota sobre os marcadores `LOCADO`/`LOCADORA`; não substitui confirmação operacional |
+| `locadora` | Marcador `LOCADORA` no relatório de outubro |
+| `indisponivel` | Indica se o relatório marca o veículo como indisponível |
+| `snapshot_date` | Data da fotografia atual do estoque |
 
 ## Limitações e privacidade
 
