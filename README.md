@@ -29,7 +29,7 @@ O projeto passou a comparar duas fotografias: **03/08/2026** e **15/10/2026**. A
 O CSV atualizado omite códigos internos, placas, RENAVAM e datas exatas de entrada. As correspondências entre relatórios foram feitas privadamente e são descritas apenas em nível agregado no notebook; nenhum identificador por unidade é publicado.
 
 
-## Resumo executivo
+## Resultados da fotografia de agosto (03/08/2026)
 
 | Indicador | Resultado |
 |---|---:|
