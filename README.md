@@ -4,6 +4,31 @@ Projeto de análise de dados aplicado a um relatório real de estoque de veícul
 
 > **Pergunta de negócio:** qual é o valor anunciado dos veículos com preço disponível, quanto desse valor está associado a itens há mais de 180 dias no pátio e quais categorias merecem análise adicional?
 
+## Atualização de estoque — 15/10/2026
+
+O projeto passou a comparar duas fotografias: **03/08/2026** e **15/10/2026**. A versão mais recente contém 163 registros, 150 com preço anunciado e 13 sem preço.
+
+| Indicador | 03/08/2026 | 15/10/2026 |
+|---|---:|---:|
+| Registros de estoque | 184 | 163 |
+| Cobertura de preço | 66,85% | 92,02% |
+| Soma dos preços anunciados | R$ 8.266.200 | R$ 8.468.420 |
+| Registros com preço e mais de 180 dias | 34 | 38 |
+| Valor anunciado acima de 180 dias | R$ 3.176.580 | R$ 4.531.630 |
+| Parcela do valor anunciado acima de 180 dias | 38,43% | 53,51% |
+
+**Como ler a comparação:** os relatórios têm cobertura de preços diferente, portanto os valores totais e percentuais não são perfeitamente comparáveis. No relatório de outubro, dois registros com preço estão marcados como indisponíveis. Excluindo-os, 36 registros disponíveis com mais de 180 dias somam R$ 4.194.650 — 51,59% do valor anunciado dos registros disponíveis com preço. Preço anunciado não é custo de aquisição nem margem de lucro.
+
+### Arquivos da atualização
+
+- [Base anonimizada de 15/10/2026](estoque_2026-10-15_anonimizado.csv)
+- [Histórico agregado dos indicadores](historico_indicadores_estoque.csv)
+- [Análise comparativa reproduzível](comparativo_estoque.ipynb)
+- [Relatório comparativo em Markdown](comparativo_estoque.md)
+
+O CSV atualizado omite códigos internos, placas, RENAVAM e datas exatas de entrada. As correspondências entre relatórios foram feitas privadamente e são descritas apenas em nível agregado no notebook; nenhum identificador por unidade é publicado.
+
+
 ## Resumo executivo
 
 | Indicador | Resultado |
