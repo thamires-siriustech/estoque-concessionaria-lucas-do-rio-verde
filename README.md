@@ -10,9 +10,9 @@ Análise de dados que mede quanto do capital de uma concessionária está imobil
 
 - **R$ 8,3 milhões imobilizados em estoque** (nos 123 veículos com preço anunciado), sendo mais de 90% concentrados nos carros — as motos, apesar de metade das unidades, pesam pouco no capital.
 - **38% do capital — cerca de R$ 3,2 milhões — está parado há mais de 180 dias.** É caixa travado que poderia estar girando.
-- **Os ex-locados são o principal vilão do encalhe:** veículos que voltaram da locação ficam parados em média quase um ano, muito acima do estoque normal.
+- **Os ex-locados ficam parados quase um ano em média,** bem acima do estoque normal. A loja opera uma locadora: compra o 0km, fatura com ele na locação e depois o transfere para a venda — então esse carro já rendeu na primeira vida. O problema não é tê-lo, e sim a eficiência da revenda.
 - **Repasse não é o problema:** ao contrário do senso comum, carros de repasse giram praticamente no mesmo ritmo que o estoque normal.
-- Recomendação: uma política específica de precificação e giro para ex-locados ataca diretamente a maior fonte de capital imobilizado, liberando caixa sem precisar vender uma unidade a mais do que o normal.
+- Mesmo com a locadora rendendo antes, **manter 38% do capital parado trava o giro** — e varejo de veículo depende de giro. Recomendação: uma régua de precificação do ex-locado ancorada na quilometragem de saída da frota (na operação, ~30 mil km), para fechar o ciclo rápido e liberar caixa.
 
 ## Metodologia
 
@@ -51,6 +51,8 @@ estoque-concessionaria-lucas-do-rio-verde/
 ## Sobre os dados e privacidade
 
 Os dados são reais, de um relatório de estoque de 03/08/2026, mas foram **anonimizados**: nomes de loja substituídos por Loja 1/2/3 e identificadores sensíveis (placa e RENAVAM) removidos. Não há dado de custo, margem ou cliente — apenas o preço de venda anunciado, que é informação pública. 61 veículos (quase todos motos novas) estão sem preço ("Consulte") e ficam de fora das análises de valor. Não há quilometragem, então a depreciação é analisada por ano-modelo.
+
+Um detalhe do modelo de negócio é essencial para ler os resultados: a loja opera uma **locadora**. Compra veículos 0km, fatura com eles na locação (rodando por volta de 30 mil km) e depois os transfere para o estoque de venda. Por isso o veículo "ex-locado" chega ao pátio já tendo rendido na primeira vida — a análise trata o capital parado nesse grupo como uma questão de eficiência da revenda, não de prejuízo. A rodagem de ~30 mil km é conhecida pela operação, não está no relatório.
 
 ---
 
