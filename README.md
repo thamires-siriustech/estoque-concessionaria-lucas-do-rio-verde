@@ -19,6 +19,23 @@ O projeto passou a comparar duas fotografias: **03/08/2026** e **15/10/2026**. A
 
 **Como ler a comparação:** os relatórios têm cobertura de preços diferente, portanto os valores totais e percentuais não são perfeitamente comparáveis. No relatório de outubro, dois registros com preço estão marcados como indisponíveis. Excluindo-os, 36 registros disponíveis com mais de 180 dias somam R$ 4.194.650 — 51,59% do valor anunciado dos registros disponíveis com preço. Preço anunciado não é custo de aquisição nem margem de lucro.
 
+### Repasse: valor anunciado por fotografia
+
+| Indicador | 03/08/2026 | 15/10/2026 |
+|---|---:|---:|
+| Veículos de repasse com preço | 26 | 37 |
+| Carros de repasse | 21 | 27 |
+| Motos de repasse | 5 | 10 |
+| **Valor anunciado total de repasse** | **R$ 1.238.650** | **R$ 1.699.550** |
+| Valor anunciado em repasses acima de 180 dias | R$ 358.930 | R$ 663.920 |
+| Repasse / soma dos preços anunciados | 14,98% | 20,07% |
+
+No relatório de **15/10/2026**, os 37 veículos marcados como repasse têm preço informado. O total de **R$ 1.699.550** é a soma dos preços anunciados, não custo de aquisição ou margem.
+
+### Locação: classificação operacional separada
+
+A operação informou que há **3 carros ex-locados no estoque de revenda**; os demais registros marcados como LOCADO ainda seguem em locação. O relatório de outubro tem 16 registros com o marcador LOCADO e um registro com o marcador LOCADORA, mas esses marcadores, sozinhos, não identificam quais são os três carros ex-locados. Até que sejam vinculados com segurança às linhas anonimizadas, o projeto **não atribui valor total nem média de dias ao subgrupo de ex-locados**.
+
 ### Arquivos da atualização
 
 - [Base anonimizada de 15/10/2026](estoque_2026-10-15_anonimizado.csv)
@@ -42,13 +59,13 @@ O CSV atualizado omite códigos internos, placas, RENAVAM e datas exatas de entr
 
 **Importante:** a soma dos preços anunciados é uma aproximação do valor anunciado associado ao estoque. Não é custo de aquisição, capital contábil comprovado, caixa disponível ou margem de lucro. Os resultados de valor consideram apenas os 123 registros com preço informado.
 
-![Resumo visual do valor anunciado por tempo em estoque e dias médios por categoria](assets/resumo-estoque.svg)
+<!-- O gráfico anterior foi removido da leitura principal enquanto a classificação de locação é revisada. -->
 
 ## Principais achados
 
 - **O valor anunciado está concentrado nos carros.** Dos 123 registros com preço, 81 são carros e somam R$ 7.614.020 (cerca de 92% do valor anunciado). As 42 motos com preço somam R$ 652.180 (cerca de 8%).
 - **34 registros com preço estão há mais de 180 dias no pátio.** Eles somam R$ 3.176.580 em preços anunciados, ou 38,43% do valor anunciado nos registros com preço.
-- **Os ex-locados têm a maior permanência média observada.** A média é de 329 dias, em comparação com 148 dias no grupo normal e 153 dias no grupo de repasse.
+- **A classificação de locação exige validação operacional.** O marcador `LOCADO` da fonte não significa automaticamente que o veículo já saiu da locação; por isso, a média de dias dos três ex-locados confirmados ainda não é calculada nesta versão.
 - **O grupo de repasse tem média próxima à do grupo normal neste recorte.** Essa semelhança não prova que as categorias tenham a mesma rentabilidade ou velocidade de venda; o conjunto mostra apenas a idade atual dos itens ainda em estoque.
 
 Esses resultados sugerem onde investigar: critérios de precificação, permanência de ex-locados e estratégia de saída de veículos antigos no pátio. Não demonstram, isoladamente, que uma redução de preço aumentaria a rentabilidade ou liberaria caixa em determinada velocidade.
@@ -57,7 +74,7 @@ Esses resultados sugerem onde investigar: critérios de precificação, permanê
 
 1. **Preparação dos dados:** informações extraídas de um relatório de estoque em PDF foram estruturadas em um CSV anonimizado. O notebook público começa pelo CSV; o PDF original não faz parte deste repositório.
 2. **Validação:** o notebook verifica colunas essenciais, tipos de veículo, preços e dias negativos, e contabiliza linhas integralmente repetidas para diagnóstico.
-3. **Análise exploratória:** valor anunciado por tipo e faixa de preço, distribuição por tempo em estoque (*aging*), maiores permanências, comparação entre normal/repasse/ex-locado, preço médio por ano-modelo e distribuição por marca.
+3. **Análise exploratória:** valor anunciado por tipo e faixa de preço, distribuição por tempo em estoque (*aging*), maiores permanências, comparação entre normal e repasse, preço médio por ano-modelo e distribuição por marca. Os marcadores de locação são tratados separadamente, sem presumir que `LOCADO` signifique ex-locado.
 4. **Interpretação:** os resultados são lidos como uma fotografia do estoque em **03/08/2026**, não como uma série histórica.
 
 ## Ferramentas
@@ -86,7 +103,7 @@ Mantenha `analise_estoque_concessionaria.ipynb` e `estoque_lucas.csv` na mesma p
 ```
 estoque-concessionaria-lucas-do-rio-verde/
 ├── assets/
-│   └── resumo-estoque.svg
+│   └── resumo-estoque.svg (visualização antiga; não usar para interpretar ex-locados)
 ├── analise_estoque_concessionaria.ipynb
 ├── estoque_lucas.csv
 ├── requirements.txt
@@ -107,10 +124,10 @@ estoque-concessionaria-lucas-do-rio-verde/
 | `preco` | Preço anunciado; vazio quando não havia preço informado |
 | `comb` | Código de combustível conforme registrado na fonte |
 | `cambio` | Câmbio informado |
-| `locado` | Indicador de veículo classificado como ex-locado |
+| `locado` | Marcador `LOCADO` presente no relatório original; não confirma que o veículo já saiu da locação |
 | `repasse` | Indicador de veículo classificado como repasse |
 | `dias` | Dias em estoque na data de referência |
-| `loja` | Loja anonimizada (Loja 1, Loja 2 ou Loja 3) |
+| `loja` | Loja anonimizada (Loja 1, Loja 2 ou Loja 3) |\n| `situacao_locacao` | Nota sobre os marcadores `LOCADO`/`LOCADORA`; não substitui confirmação operacional |
 
 ## Limitações e privacidade
 
