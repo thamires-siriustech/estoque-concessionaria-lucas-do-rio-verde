@@ -4,6 +4,10 @@
 
 Como mudou o estoque registrado entre 03/08/2026 e 15/10/2026, e qual é a concentração do valor anunciado nos itens com mais de 180 dias em pátio?
 
+## Escopo de locação
+
+Os indicadores de idade e valor abaixo descrevem os registros listados no relatório, inclusive marcações de locação. A operação informou que há **3 carros ex-locados disponíveis para venda**; os demais registros marcados como LOCADO continuam em locação. Como ainda não existe correspondência segura entre os três carros confirmados e as linhas anonimizadas, os indicadores gerais não devem ser interpretados como estoque de revenda totalmente isolado.
+
 ## Indicadores principais
 
 | Indicador | 03/08/2026 | 15/10/2026 |
