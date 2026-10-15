@@ -17,7 +17,7 @@ Análise de dados que mede quanto do capital de uma concessionária está imobil
 ## Metodologia
 
 1. **Extração** — o relatório de estoque veio em PDF; os dados foram extraídos de forma programática (pdfplumber) para um CSV estruturado.
-2. **Anonimização e limpeza** — nomes das lojas substituídos por "Loja 1/2/3"; identificadores sensíveis (placa e RENAVAM) removidos por completo; marcação de veículos "ex-locado" e "repasse" como atributos de análise.
+2. **Anonimização e limpeza** — nomes das lojas substituídos por "Loja 1/2/3"; identificadores sensíveis (placa e RENAVAM) removidos por completo; códigos internos também não são necessários na versão pública; marcação de veículos "ex-locado" e "repasse" como atributos de análise.
 3. **Análise** — distribuição do capital por tipo (carro × moto) e faixa de preço; capital por tempo em estoque (aging); ranking de encalhe e comparação por origem (normal / repasse / ex-locado); curva de preço por ano-modelo; mix de marcas.
 
 ## Stack técnico
@@ -50,7 +50,7 @@ estoque-concessionaria-lucas-do-rio-verde/
 
 ## Sobre os dados e privacidade
 
-Os dados são reais, de um relatório de estoque de 03/08/2026, mas foram **anonimizados**: nomes de loja substituídos por Loja 1/2/3 e identificadores sensíveis (placa e RENAVAM) removidos. Não há dado de custo, margem ou cliente — apenas o preço de venda anunciado, que é informação pública. 61 veículos (quase todos motos novas) estão sem preço ("Consulte") e ficam de fora das análises de valor. Não há quilometragem, então a depreciação é analisada por ano-modelo.
+Os dados são reais, de um relatório de estoque de 03/08/2026, mas foram **anonimizados**: nomes de loja substituídos por Loja 1/2/3 e identificadores sensíveis (placa e RENAVAM) removidos. Não há dado de custo, margem ou cliente — apenas o preço de venda anunciado. O PDF original contém identificadores e não deve ser publicado. 61 veículos estão sem preço ("Consulte") e ficam de fora das análises de valor. O CSV apresenta linhas integralmente repetidas após a anonimização; elas não são removidas automaticamente, pois podem corresponder a unidades distintas. A deduplicação exige validação com a fonte original. Não há quilometragem, então a depreciação é analisada por ano-modelo.
 
 Um detalhe do modelo de negócio é essencial para ler os resultados: a loja opera uma **locadora**. Compra veículos 0km, fatura com eles na locação (rodando por volta de 30 mil km) e depois os transfere para o estoque de venda. Por isso o veículo "ex-locado" chega ao pátio já tendo rendido na primeira vida — a análise trata o capital parado nesse grupo como uma questão de eficiência da revenda, não de prejuízo. A rodagem de ~30 mil km é conhecida pela operação, não está no relatório.
 
