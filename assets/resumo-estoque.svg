@@ -10,7 +10,7 @@
   <text x="78" y="190" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64778a">Escala proporcional · total considerado: R$ 8.266.200</text>
 
   <text x="78" y="244" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#30465c">0–30 dias · 3 veículos</text>
-  <rect x="78" y="255" width="30" height="19" rx="4" fill="#8ab9d8"/>
+  <rect x="78" y="255" width="17" height="19" rx="4" fill="#8ab9d8"/>
   <text x="122" y="270" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#30465c">R$ 179.770 · 2,2%</text>
 
   <text x="78" y="326" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#30465c">31–90 dias · 55 veículos</text>
