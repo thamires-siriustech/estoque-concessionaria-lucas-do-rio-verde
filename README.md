@@ -59,7 +59,7 @@ O CSV atualizado omite códigos internos, placas, RENAVAM e datas exatas de entr
 
 **Importante:** a soma dos preços anunciados é uma aproximação do valor anunciado associado ao estoque. Não é custo de aquisição, capital contábil comprovado, caixa disponível ou margem de lucro. Os resultados de valor consideram apenas os 123 registros com preço informado.
 
-<!-- O gráfico anterior foi removido da leitura principal enquanto a classificação de locação é revisada. -->
+![Resumo do estoque atualizado: indicadores gerais e valor anunciado dos veículos marcados como repasse](assets/resumo-estoque.svg)
 
 ## Principais achados
 
@@ -103,7 +103,7 @@ Mantenha `analise_estoque_concessionaria.ipynb` e `estoque_lucas.csv` na mesma p
 ```
 estoque-concessionaria-lucas-do-rio-verde/
 ├── assets/
-│   └── resumo-estoque.svg (visualização antiga; não usar para interpretar ex-locados)
+│   └── resumo-estoque.svg                       # resumo atualizado do estoque e repasses
 ├── analise_estoque_concessionaria.ipynb
 ├── estoque_lucas.csv
 ├── requirements.txt
